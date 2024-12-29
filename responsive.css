@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.navbar .menu {
+    display: none;
+}
+
+.menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list-items a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(to bottom, #0088cc, #004080);
+    color: white;
+}
+
+.hero .btn {
+    margin: 1rem 0.5rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.common-btn {
+    background: #ff5733;
+    color: white;
+}
+
+.ghost-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 2rem 1rem;
+    background: #f4f4f4;
+}
+
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.my-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.port-card {
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.port-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+/* Services Section */
+.services-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.my-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    background: #333;
+    color: white;
+}
+
+.contact-form-container,
+.contact-details {
+    width: 100%;
+}
+
+/* Footer */
+.footer {
+    background: #000;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (min-width: 768px) {
+    .navbar .menu {
+        display: flex;
+    }
+
+    .menu-list {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .my-row {
+        gap: 2rem;
+    }
+
+    .my-col {
+        flex: 0 0 30%;
+        max-width: 30%;
+    }
+
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .services-content {
+        flex-direction: row;
+    }
+
+    .contact-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-form-container,
+    .contact-details {
+        width: 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 5rem 2rem;
+    }
+
+    .portfolio,
+    .services-content,
+    .contact-content {
+        padding: 4rem 2rem;
+    }
+}
