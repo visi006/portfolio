@@ -1,1 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background: #4a90e2;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #4a90e2;
+    border-bottom: 2px solid #4a90e2;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.skills-list, .education-list, .experience-list {
+    list-style: none;
+}
+
+.skills-list li, .education-list li, .experience-list li {
+    margin-bottom: 0.8rem;
+}
+
+.skills-list li {
+    background: #eef7ff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #4a90e2;
+    color: white;
+}
 
